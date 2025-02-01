@@ -26,7 +26,7 @@ git checkout <team_name>
 
 Please note, you will be provisioned credits before the hackathon for quantum hardwares. The following resources are provided in this challenge:
 
-* IonQ Aria 1 Noisy Quantum Simulator (no time limit, syntax)
+* IonQ Aria 1 Noisy Quantum Simulator (no time limit, [qiskit syntax](#Syntax-of-using-IonQ-simulator-on-qiskit-circuit), [other syntax](https://docs.qbraid.com/sdk/user-guide/providers/ionq))
 * IBM hardware (10 minutes, [syntax](https://docs.qbraid.com/sdk/user-guide/providers/ibm))
 
 **Strategize carefully and conduct back of the envelope estimates for your experiments before running**.
@@ -35,9 +35,11 @@ For other questions or additional help using qBraid, see [Lab User Guide](https:
 
 ## Before submission
 
-Make sure that you devote some time to prepare a brief presentation (5-10 mins) showing your work. This presentation will be presented on Sunday.
+Make sure that you devote some time to prepare a brief presentation (3-7 mins) showing your work. This presentation will be presented on Sunday.
 
-## Syntax of using IonQ simulator
+We encourage you to show your experimental results, and your innovative solutions.
+
+## Syntax of using IonQ simulator on qiskit circuit
 
 Qiskit circuit is used as an example here.
 
@@ -59,4 +61,10 @@ run_input = program.serialize()
 job = device.submit(run_input, shots=100, noise_model="aria-1")
 ```
 
-## **Scoring Criteria**
+## Scoring Criteria
+
+The scoring criteria are as follows:
+
+- **55%** is based on the main quantum TDA workflow (steps 1~4).
+- **40%** is allocated to creativity and innovation, evaluated through the work on one of challenge from the BONUS section.
+- **5%** is assigned to presentation quality.
